@@ -2,6 +2,7 @@ package stepDefination;
 
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
 
@@ -26,6 +27,7 @@ public class AccountsPageSteps {
 		String password = credList.get(0).get("password");
 		
 		DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+		DriverFactory.getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		accountspage=login.doLogin(username, password);
 
 	}

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: testRunners.MyRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 114.582 s <<< FAILURE! - in testRunners.MyRunner
+null on testRunners.MyRunner(testRunners.MyRunner)  Time elapsed: 114.416 s  <<< FAILURE!
+java.lang.RuntimeException: java.net.ConnectException: Connection refused: connect
+Caused by: java.net.ConnectException: Connection refused: connect
+
